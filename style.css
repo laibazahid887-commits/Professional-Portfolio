@@ -1687,3 +1687,105 @@ body.dark-mode .footer {
 .theme-toggle:hover {
     transform: rotate(20deg) scale(1.1);
 }
+/* =========================
+   PROJECT GITHUB LINKS
+========================= */
+
+.project-links {
+    margin-top: 24px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    color: var(--dark);
+    font-size: 13px;
+    font-weight: 600;
+
+    transition:
+        color 0.3s ease,
+        gap 0.3s ease;
+}
+
+.project-link:hover {
+    color: var(--accent);
+    gap: 13px;
+}
+
+.project-link svg {
+    flex-shrink: 0;
+}
+/* Project preview images */
+
+
+.project-image {
+    height: 230px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.project-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.06);
+}
+
+/* Second project image: show the complete image */
+
+
+.second-project-image {
+    height: 230px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.second-project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .second-project-image img {
+    transform: scale(1.02);
+}
+
+/* Center the first project image */
+.project-image:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-project-image {
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.first-project-image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
